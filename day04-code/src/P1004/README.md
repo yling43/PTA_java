@@ -18,6 +18,7 @@ The sample case represents a tree with only 2 nodes, where 01 is the root and 02
 ##Sample Input:
 >2 1  
 01 1 02   
+
 ##Sample Output:
 >0 1  
 -----
