@@ -6,6 +6,10 @@ public class Main {
     public static void main(String[] args){
         Scanner in =new Scanner(System.in);
         int N = in.nextInt();
+        if(N==0)
+        {
+            return;
+        }
         int M = in.nextInt();
         //注意空节点的情况
         //读取量表
