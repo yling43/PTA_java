@@ -16,9 +16,17 @@ For each test case, you are supposed to count those family members who have no c
 The sample case represents a tree with only 2 nodes, where 01 is the root and 02 is its only child. Hence on the root 01 level, there is 0 leaf node; and on the next level, there is 1 leaf node. Then we should output 0 1 in a line.
 
 ##Sample Input:
->2 1  
+>3 1  
 01 1 02   
+02 1 03   
+
+
 
 ##Sample Output:
 >0 1  
 -----
+##分析
+并没有说明这个情况最多只有两个孩子，也就是可能有多个孩子。
+- 因为孩子的数量没有确定可能大于二。所以选择使用的孩子指向父母的结构。
+- 每一个节点中包含了节点当前的层数。添加节点时候更新层数。
+- 建立一个链表，记录的no-leaf Node。
